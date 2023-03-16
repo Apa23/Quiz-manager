@@ -1,0 +1,13 @@
+.side-menu{
+    background-color: rgb(252, 112, 61);
+    height: 100vh;
+    transition: 0.3s;
+}
+
+.side-menu .burger-menu{
+    cursor: pointer;
+}
+
+.side-menu .nav-item a{
+    display: flex;
+}
