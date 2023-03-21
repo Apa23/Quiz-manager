@@ -4,24 +4,24 @@ export const authSlice = createSlice({
   name: "auth",
   initialState: {
     status: "not-authenticated",
-    uid: null,
+    id: null,
     email: null,
-    displayName: null,
-    photoURL: null,
-    errorMessage: null,
+    role: null,
+    name: null,
+    message: null,
   },
   reducers: {
     login: (state, { payload }) => {
-      state.uid = payload.uid;
+      state.id = payload.id;
       state.email = payload.email;
-      state.displayName = payload.displayName;
-      state.photoURL = payload.photoURL;
-      state.errorMessage = null;
+      state.role = payload.role;
+      state.name = payload.name;
+      state.message = "Clic the bottom to continue";
       state.status = "logged in";
     },
     loginError: (state) => {
       state.status = "login error";
-      state.errorMessage = "Email or password was wrong";
+      state.message = "Email or password was wrong";
     },
     logout: (state, payload) => {},
     checkinCredentials: (state) => {
@@ -30,4 +30,5 @@ export const authSlice = createSlice({
   },
 });
 
-export const { login, logout, loginError, checkinCredentials } = authSlice.actions;
+export const { login, logout, loginError, checkinCredentials } =
+  authSlice.actions;

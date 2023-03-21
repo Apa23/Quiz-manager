@@ -1,27 +1,45 @@
-import { faHome } from "@fortawesome/free-solid-svg-icons"
-import { faUser } from "@fortawesome/free-solid-svg-icons"
-import { faEnvelope } from "@fortawesome/free-solid-svg-icons"
-import { faLocationDot } from "@fortawesome/free-solid-svg-icons"
+import { faHome } from "@fortawesome/free-solid-svg-icons";
+import { faUser } from "@fortawesome/free-solid-svg-icons";
+import { faEnvelope } from "@fortawesome/free-solid-svg-icons";
 
-export const itemsMenu = [
+export const menuAdmin = [
   {
     icon: faHome,
-    title: 'title1',
-    url: 'url1',
+    title: "Home",
+    url: "url1",
+    mainMenu: false,
   },
   {
     icon: faUser,
-    title: 'title2',
-    url: 'url2',
+    title: "Users",
+    url: "url2",
+    mainMenu: true,
   },
   {
     icon: faEnvelope,
-    title: 'title3',
-    url: 'url3',
+    title: "Form",
+    url: "url3",
+    mainMenu: true,
+  },
+];
+
+export const menuStudent = [
+  {
+    icon: faHome,
+    title: "Home",
+    url: "url1",
+    mainMenu: false,
   },
   {
-    icon: faLocationDot,
-    title: 'title4',
-    url: 'url4'
+    icon: faUser,
+    title: "Me",
+    url: "url2",
+    mainMenu: false,
   },
-]
+  {
+    icon: faEnvelope,
+    title: "Forms",
+    url: "url3",
+    mainMenu: true
+  },
+];

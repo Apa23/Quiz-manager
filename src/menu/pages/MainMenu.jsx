@@ -2,10 +2,14 @@ import React from "react";
 import { Col, Container, Row } from "react-bootstrap";
 import { MainMenuItem } from "../components/MainMenuItem";
 import { SideMenu } from "../components/SideMenu";
-import { itemsMenu } from "../misc/menu-items";
-import '../../styles/mainMenu.css'
+import { menuAdmin, menuStudent } from "../misc/menu-items";
+import "../../styles/mainMenu.css";
+import { useSelector } from "react-redux";
 
 export const MainMenu = () => {
+  const info = useSelector((state) => state.auth);
+  const itemsMenu = info.role === "administrador" ? menuAdmin : menuStudent;
+
   return (
     <Container fluid className="main-menu">
       <Row xs={12}>
@@ -13,16 +17,20 @@ export const MainMenu = () => {
         <Col>
           <Row>
             {itemsMenu.map((item, index) => {
-              return (
-                <Col key={index} xs={3}>   
-                  <MainMenuItem
-                    key={item.title}
-                    icon={item.icon}
-                    title={item.title}
-                    url={item.url}
-                  />
-                </Col>
-              );
+              if (item.mainMenu) {
+                return (
+                  <Col key={index} xs={3}>
+                    <MainMenuItem
+                      key={item.title}
+                      icon={item.icon}
+                      title={item.title}
+                      url={item.url}
+                    />
+                  </Col>
+                );
+              } else {
+                return null
+              }
             })}
           </Row>
         </Col>

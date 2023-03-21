@@ -38,7 +38,7 @@ export const LoginPage = () => {
   if(info.status === "logged in"){
     Swal.fire({
       title: "Login Success!",
-      text: "Clic the bottom to continue",
+      text: info.message,
       icon: "success",
       confirmButtonText: "Continue",
       willClose: () => {
@@ -48,7 +48,7 @@ export const LoginPage = () => {
   }else if(info.status === "login error"){
     Swal.fire({
       title: 'Error!',
-      text: 'Email or password was wrong',
+      text: info.message,
       icon: 'error',
       confirmButtonText: 'Try Again'
     });
