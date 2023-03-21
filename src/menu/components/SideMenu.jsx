@@ -26,6 +26,7 @@ export const SideMenu = () => {
               icon={item.icon}
               title={item.title}
               url={item.url}
+              open={open}
             />
           );
         })}

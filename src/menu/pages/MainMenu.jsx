@@ -33,6 +33,7 @@ export const MainMenu = () => {
                       icon={item.icon}
                       title={item.title}
                       url={item.url}
+                      functions = {item.functions}
                     />
                   </Col>
                 );

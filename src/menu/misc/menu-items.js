@@ -14,12 +14,25 @@ export const menuAdmin = [
     title: "Users",
     url: "url2",
     mainMenu: true,
+    functions:[
+      "Create an User",
+      "Get a List of Users",
+      "Edit an User Information",
+      "Get an User Information"
+    ]
   },
   {
     icon: faEnvelope,
-    title: "Form",
+    title: "Forms",
     url: "url3",
     mainMenu: true,
+    functions:[
+      "Create a Question",
+      "List of Questions",
+      "Delte a Questions",
+      "Edit a Question",
+      "List of Answers of a Question",
+    ]
   },
 ];
 
@@ -38,8 +51,11 @@ export const menuStudent = [
   },
   {
     icon: faEnvelope,
-    title: "Forms",
+    title: "Form",
     url: "url3",
-    mainMenu: true
+    mainMenu: true,
+    functions:[
+      "Answare the formulary",
+    ]
   },
 ];
