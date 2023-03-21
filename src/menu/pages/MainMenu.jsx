@@ -5,6 +5,7 @@ import { SideMenu } from "../components/SideMenu";
 import { menuAdmin, menuStudent } from "../misc/menu-items";
 import "../../styles/mainMenu.css";
 import { useSelector } from "react-redux";
+import { HeaderComponent } from "../components/HeaderComponent";
 
 export const MainMenu = () => {
   const info = useSelector((state) => state.auth);
@@ -15,6 +16,13 @@ export const MainMenu = () => {
       <Row xs={12}>
         <SideMenu />
         <Col>
+          <HeaderComponent />
+          <Row>
+            <h2>Welcome to Quizter</h2>
+            <h3>The ultimate quiz manager system</h3>
+            <p>Bellow you can find your avilables options. Clic on a card to access to them.</p>
+            <p>You can also use the side menu to navigate between diferent modules.</p>
+          </Row>
           <Row>
             {itemsMenu.map((item, index) => {
               if (item.mainMenu) {
