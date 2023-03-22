@@ -1,0 +1,10 @@
+.user-management {
+    height: 100vh;
+    padding: 0 !important;
+  }
+  
+  .user-management .row,
+  .user-management .col {
+    margin: 0;
+    padding: 0;
+  }

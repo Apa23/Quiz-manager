@@ -1,15 +1,13 @@
 import React from 'react'
 import { Navigate, Route, Routes } from 'react-router-dom'
-import { UsersManagement } from '../../users/pages/UsersManagement'
 import { MainMenu } from '../pages/MainMenu'
 
-export const MainMenuRouter = () => {
+export const UsersRouter = () => {
   return (
     
         <Routes>
             <Route path='/' element={<MainMenu />}/>
-            <Route path='/users' element={<UsersManagement />}/>
-            <Route path='/*' element={<Navigate to='/' />}/>
+            <Route path='/*' element={<Navigate to='/users' />}/>
         </Routes>
     
   )

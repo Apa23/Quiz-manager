@@ -1,0 +1,44 @@
+.header {
+  -webkit-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 1px 15px 5px rgba(0, 0, 0, 0.18);
+}
+
+.header-content {
+  justify-content: space-between;
+  padding: 1rem 0 !important;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.header-content .header-title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header-content .header-title h1 {
+  font-size: 1.5rem !important;
+  margin: 0;
+  color: rgb(82, 82, 82);
+}
+
+.header-content .header-user {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.header-content .header-user h2 {
+  font-size: 1rem;
+  margin: 0;
+  color: rgb(82, 82, 82);
+}
+
+.header-content .header-user svg {
+  color: rgb(252, 112, 61);
+}
+
+.header-margin {
+  background-color: rgb(252, 112, 61);
+  height: 0.5rem;
+}

@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import React from 'react'
 import { Col, Row } from 'react-bootstrap'
 import { useSelector } from 'react-redux';
+import '../../styles/header.css'
 
 export const HeaderComponent = () => {
   const info = useSelector((state) => state.auth);

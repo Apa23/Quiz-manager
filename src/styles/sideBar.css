@@ -1,69 +1,70 @@
-.side-menu{
-    height: 100vh;
-    transition: 0.3s;
-    display: flex;
-    flex-direction: column;
-    padding: 0 0 1.5rem 0 !important;
-    border-right: rgb(206, 206, 206) solid 1px;
+.side-menu {
+  height: 100vh;
+  transition: 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 0 0 1.5rem 0 !important;
+  border-right: 1px solid #f0f0f0;
+  -webkit-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.18);
+  -moz-box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.18);
+  box-shadow: 0px 0px 15px 5px rgba(0, 0, 0, 0.18);
+  z-index: 10;
 }
 
-.side-menu .nav-item a{
-    display: flex;
+.side-menu .nav-item a {
+  display: flex;
 }
 
-.logo-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    height: 180px;
-    background-color: rgb(252, 112, 61);
-    padding: 1.5rem 0;
+.logo-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 180px;
+  background-color: rgb(252, 112, 61);
+  padding: 1.5rem 0;
 }
 
-.logo-area img{
-    max-width: 90px;
-    width: 70%;
+.logo-area img {
+  max-width: 90px;
+  width: 70%;
 }
 
-.menu-items-area{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 2rem;
-    
-
+.menu-items-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
 }
 
-.nav-item{
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 0;
-    text-decoration: none !important;
-    color: rgb(82, 82, 82);
+.nav-item {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  text-decoration: none !important;
+  color: rgb(82, 82, 82);
 }
 
-.nav-item.open{
-    border-bottom: rgb(209, 209, 209) solid 1px;
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    padding: 1rem 0;
-    text-decoration: none !important;
+.nav-item.open {
+  border-bottom: 1px solid #f0f0f0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 1rem 0;
+  text-decoration: none !important;
 }
 
-
-.nav-item p{
-    padding: 0;
-    margin: 0 !important;
+.nav-item p {
+  padding: 0;
+  margin: 0 !important;
 }
 
-.footer-menu-area{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: auto;
-    cursor: pointer;
+.footer-menu-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: auto;
+  cursor: pointer;
 }

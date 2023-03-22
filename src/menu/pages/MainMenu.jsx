@@ -13,21 +13,21 @@ export const MainMenu = () => {
 
   return (
     <Container fluid className="main-menu">
-      <Row xs={12}>
+      <Row>
         <SideMenu />
         <Col>
           <HeaderComponent />
-          <Row>
-            <h2>Welcome to Quizter</h2>
-            <h3>The ultimate quiz manager system</h3>
+          <Row className="welcome-message">
+            <h2><b>Welcome to Quizter</b></h2>
+            <h4>The ultimate quiz manager system</h4>
             <p>Bellow you can find your avilables options. Clic on a card to access to them.</p>
             <p>You can also use the side menu to navigate between diferent modules.</p>
           </Row>
-          <Row>
+          <Row className="modules-area">
             {itemsMenu.map((item, index) => {
               if (item.mainMenu) {
                 return (
-                  <Col key={index} xs={3}>
+                  <Col key={index} xs={3} className="offset-1">
                     <MainMenuItem
                       key={item.title}
                       icon={item.icon}

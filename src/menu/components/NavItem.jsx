@@ -5,7 +5,7 @@ import { faAngleRight } from '@fortawesome/free-solid-svg-icons'
 
 export const NavItem = ({ icon, title, url, open}) => {
   return (
-    <Link href={url} className={`nav-item ${open?'open':''}`} >
+    <Link to={url} className={`nav-item ${open?'open':''}`} >
       
         <FontAwesomeIcon icon={icon} />
         {open?<p >{title}</p>:null}

@@ -6,13 +6,13 @@ export const menuAdmin = [
   {
     icon: faHome,
     title: "Home",
-    url: "url1",
+    url: "/",
     mainMenu: false,
   },
   {
     icon: faUser,
     title: "Users",
-    url: "url2",
+    url: "/users",
     mainMenu: true,
     functions:[
       "Create an User",
@@ -24,7 +24,7 @@ export const menuAdmin = [
   {
     icon: faEnvelope,
     title: "Forms",
-    url: "url3",
+    url: "/forms",
     mainMenu: true,
     functions:[
       "Create a Question",
